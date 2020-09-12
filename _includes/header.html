@@ -20,34 +20,32 @@
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
       </button>
-      <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
-          <!-- About -->
-          <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+            <div class="collapse navbar-collapse text-right" id="navbarNav">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <!-- About -->
+                    <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
+                        <a class="nav-link" href="{{ '/' | relative_url }}">
               about
               {% if page.title == "about" %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
-          </li>
-          {% if site.blog_name %}
-          <!-- Blog -->
-          <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/blog/' | relative_url }}">
+                    </li>
+                    {% if site.blog_name %}
+                    <!-- Blog -->
+                    <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                        <a class="nav-link" href="{{ '/blog/' | relative_url }}">
               blog
               {% if page.title == "blog" %}
               <span class="sr-only">(current)</span>
               {% endif %}
             </a>
-          </li>
-          {% endif %}
-          <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: "title" %}
-          {% for p in sorted_pages %}
-          {% if p.nav and p.autogen == nil %}
-          <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-              <a class="nav-link" href="{{ p.url | relative_url }}">
+                    </li>
+                    {% endif %}
+                    <!-- Other pages -->
+                    {% assign sorted_pages = site.pages | sort: "title" %} {% for p in sorted_pages %} {% if p.nav and p.autogen == nil %}
+                    <li class="nav-item {% if page.title == p.title %}active{% endif %}">
+                        <a class="nav-link" href="{{ p.url | relative_url }}">
                 {{ p.title }}
                 {% if page.title == p.title %}
                 <span class="sr-only">(current)</span>
