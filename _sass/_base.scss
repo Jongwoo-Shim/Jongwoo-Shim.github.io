@@ -80,7 +80,6 @@ a, table.table a {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid $grey-color-light;
   opacity: 0.95;
   background-color: var(--global-bg-color);
 }
@@ -157,6 +156,7 @@ a, table.table a {
 // News
 
 .news table td {
+  color: inherit;
   font-size: 1rem;
   color: var(--global-text-color);
 }
