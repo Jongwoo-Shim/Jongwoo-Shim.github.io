@@ -59,7 +59,7 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # -----------------------------------------------------------------------------
 
 blog_name: Jd  # your blog must have a name for it to show up in the nav bar
-blog_description: A blog with my random thoughts and ramblings.
+blog_description: My random thoughts and ramblings.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -67,7 +67,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: jongwoo-shim-github-io # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
