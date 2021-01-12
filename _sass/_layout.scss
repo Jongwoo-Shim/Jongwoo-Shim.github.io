@@ -8,21 +8,6 @@
    background-color: var(--global-bg-color);
  }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-		color: black;
-		padding-bottom: 70px;
-	}
-	.navbar {
-		background-color :  white;
-		border-bottom: 1px solid #404040;
-	}
-	.news table {
-		color: black;
-	}
-}
-
  body.fixed-top-nav {
    // Add some padding for the nav-bar.
    padding-top: 56px;
